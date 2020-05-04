@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./reset.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="head-wrapper">
+        <h1 class="head-title">HARRY POTTER'S TRIVIA</h1>
+      </header>
+      <main class="body-wrapper">
+        <div class="quiz-card">
+          <div class="score-container">
+            <p class="score-title">
+              Score
+            </p>
+            <h1 id="score" class="score-num">
+              0
+            </h1>
+          </div>
+          <div class="quizcard" id="quizzy">
+            <p id="question" class="question-wrap">Questions</p>
+
+            <div class="answers" id="answers">
+              <button id="q1a1-btn" class="q1a1 btn" data-number="1">
+                answer1
+              </button>
+              <button id="q1a2-btn" class="q1a1 btn" data-number="2">
+                answer2
+              </button>
+              <button id="q1a3-btn" class="q1a1 btn" data-number="3">
+                answer3
+              </button>
+              <button id="q1a4-btn" class="q1a1 btn" data-number="4">
+                answer4
+              </button>
+            </div>
+          </div>
+
+          <button id="next-btn">NEXT</button>
+          <button id="finish-btn" class="hide">FINISH</button>
+
+          <div id="sucess" class="hide">
+            <p class="messages">You are a True Harry Potter Fan!!</br> Dumbledore would be Proud!!!  &#128512; &#128526;</p>
+            <button id="restart" class="btn button">RESTART?</button>
+          </div>
+          <div id="medium" class="hide">
+            <p class="messages"> You can do better!! </br> &#128541;</p>
+            <button id="restart2" class="btn">RESTART!</button>
+          </div>
+          <div id="fail" class="hide">
+            <p class="messages">Sorry, Try again!</br> &#128543; &#128542;</p>
+            <button id="try-btn" class="btn button">TRY AGAIN!</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

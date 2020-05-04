@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #d6c2fc;
+  overflow: scroll;
+}
+
+/*adding padding 1px to the parent makes the child elemnt
+to be able to move without moving the parent(collapsing margin)*/
+.head-wrapper {
+  background-color: #5b0cf3;
+  height: 200px;
+  /* background-position: 805px 0px; */
+  padding: 1px;
+}
+
+.head-title {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #fce7b2;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 23%;
+
+}
+
+.body-wrapper {
+  padding: 1px;
+}
+
+.quiz-card {
+  border: 2px solid #4c3703;
+  border-radius: 10%;
+  padding: 7%;
+  width: 80%;
+  margin-left: 10%;
+  box-shadow: 0px 10px 10px 10px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+
+}
+
+.btn {
+  font-size: 1.3rem;
+  padding: 13px;
+  margin-top: 4%;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.btn:hover {
+  border-color: #4c3703;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+
+p,
+.btn {
+  font-family: 'EB Garamond', serif;
+  line-height: 20px;
+  text-align: center;
+
+}
+
+p {
+  color: #4c3703;
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+/* .btn {
+  font-weight: 700;
+} */
+
+
+
+.messages {
+  font-size: 2rem;
+  line-height: 46px;
+}
+
+#restart2 {
+  padding: 5%;
+  background-color: #fce7b2;
+  margin-top: 19%;
+  margin-left: 32%;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+
+#next-btn,
+#finish-btn {
+  padding: 7%;
+  background-color: #fce7b2;
+  margin-left: 60%;
+  margin-top: 8%;
+  width: 40%;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+
+}
+
+#next-btn:hover,
+#finish-btn:hover,
+#restart2:hover,
+.button:hover {
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  background-color: #f9d372;
+  color: #4c3703;
+}
+
+.button {
+  padding: 5%;
+  background-color: #fce7b2;
+  margin-top: 10%;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+#sucess,
+#fail {
+  text-align: center;
+}
+
+.correct {
+  background-color: #2ba745;
+  color: #fff;
+}
+
+.incorrect {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.score-container {
+  text-align: center;
+}
+
+.score-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.score-num {
+  font-size: 2rem;
+  color: darkred;
+  font-weight: bold;
+  margin-bottom: 10%;
+  border: 1px solid;
+  margin-top: 5%;
+  width: 31%;
+  margin-left: 34%;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+@media all and (min-width: 500px) {
+  .head-title {
+    margin-top: 15%;
+  }
+
+  #next-btn,
+  #finish-btn {
+    padding: 5%;
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .head-wrapper {
+    background-position: 1097px 290px;
+  }
+
+  .head-title {
+    margin-top: 8%;
+  }
+
+  #next-btn,
+  #finish-btn {
+    padding: 5%;
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .head-wrapper {
+    background-position: 1097px 290px;
+  }
+
+  .head-title {
+    margin-top: 8%;
+  }
+
+  #next-btn,
+  #finish-btn {
+    padding: 5%;
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .head-wrapper {
+    background-position: 1097px 290px;
+  }
+
+  .score-title {
+    margin-top: -7%;
+  }
+
+  .score-num {
+    margin-top: 0%;
+  }
+
+  p {
+    margin-top: -7%;
+  }
+
+  .answers {
+    margin-top: 0%;
+  }
+
+  .btn {
+    margin-top: 4%;
+    width: 58%;
+    margin-left: 21%;
+  }
+
+  .head-title {
+    margin-top: 8%;
+  }
+
+  #next-btn,
+  #finish-btn {
+    padding: 3%;
+    font-size: 1rem;
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 38%;
+    margin-bottom: -6%;
+
+  }
+
+  .button {
+    width: 40%;
+    margin-left: 0%;
+  }
+
+  #restart2 {
+    width: 40%;
+    margin-left: 29%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .head-wrapper {
+    background-position: 1097px 290px;
+  }
+
+  .score-title {
+    margin-top: -7%;
+  }
+
+  .score-num {
+    margin-top: 0%;
+  }
+
+  p {
+    margin-top: -7%;
+  }
+
+  .answers {
+    margin-top: 0%;
+  }
+
+  .btn {
+    margin-top: 4%;
+    width: 58%;
+    margin-left: 21%;
+  }
+
+  .head-title {
+    margin-top: 8%;
+  }
+
+  #next-btn,
+  #finish-btn {
+    padding: 4%;
+    font-size: 1rem;
+    width: 30%;
+  }
+}
