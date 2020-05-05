@@ -13,8 +13,7 @@ body {
 to be able to move without moving the parent(collapsing margin)*/
 .head-wrapper {
   background-color: #5b0cf3;
-  height: 200px;
-  /* background-position: 805px 0px; */
+  height: 66px;
   padding: 1px;
 }
 
@@ -23,7 +22,7 @@ to be able to move without moving the parent(collapsing margin)*/
   color: #fce7b2;
   font-size: 1.6rem;
   text-align: center;
-  margin-top: 23%;
+  margin-top: 4%;
 
 }
 
@@ -174,9 +173,7 @@ p {
 }
 
 @media all and (min-width: 500px) {
-  .head-title {
-    margin-top: 15%;
-  }
+
 
   #next-btn,
   #finish-btn {
@@ -218,9 +215,6 @@ p {
 }
 
 @media all and (min-width: 1024px) {
-  .head-wrapper {
-    background-position: 1097px 290px;
-  }
 
   .score-title {
     margin-top: -7%;
@@ -245,7 +239,7 @@ p {
   }
 
   .head-title {
-    margin-top: 8%;
+    margin-top: 1%;
   }
 
   #next-btn,
@@ -271,9 +265,7 @@ p {
 }
 
 @media all and (min-width: 1440px) {
-  .head-wrapper {
-    background-position: 1097px 290px;
-  }
+
 
   .score-title {
     margin-top: -7%;
@@ -295,10 +287,6 @@ p {
     margin-top: 4%;
     width: 58%;
     margin-left: 21%;
-  }
-
-  .head-title {
-    margin-top: 8%;
   }
 
   #next-btn,
